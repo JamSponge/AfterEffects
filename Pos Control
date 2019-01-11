@@ -1,0 +1,6 @@
+temp = effect("Slider Control")("Slider");
+if (effect("LEFT SWOOSH IN")("Checkbox")==1)
+[temp*(thisComp.width/100) - (thisComp.width/2), thisComp.height/2]
+if (effect("RIGHT SWOOSH IN")("Checkbox")==1) 
+[thisComp.width*2 - temp*(thisComp.width/100) - (thisComp.width/2), thisComp.height/2]
+if ((effect("LEFT SWOOSH IN")("Checkbox")==0) && (effect("RIGHT SWOOSH IN")("Checkbox")==0)) [thisComp.width/2,thisComp.height/2]
